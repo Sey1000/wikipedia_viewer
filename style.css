@@ -1,3 +1,47 @@
+body {
+  font-family: "IM Fell English", serif;
+  background-color: #f3f3f3; }
 
+.title {
+  margin: 50px 0 0 50px; }
+
+.search-form {
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease; }
+  .search-form .search-bar {
+    font-size: 30px;
+    border: 2px solid #fcdc7c; }
+    .search-form .search-bar:focus {
+      border: 2px solid #fcdc7c;
+      box-shadow: none;
+      outline: none; }
+  .search-form button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px; }
+
+#result {
+  margin: 20px 10vw; }
+
+.search-anchor {
+  color: #7c7c7c; }
+  .search-anchor:hover {
+    text-decoration: none; }
+
+.search-result {
+  border: 2px solid #7c7c7c;
+  padding: 10px 20px;
+  margin: 10px 0;
+  transition: 0.2s ease; }
+  .search-result:hover {
+    background-color: white; }
+
+.random-article {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #7c7c7c; }
 
 /*# sourceMappingURL=style.css.map */

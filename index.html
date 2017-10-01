@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Wikipedia Viewer</title>
-
-      <!-- bootstrap 4 & Font Awesome & style.css -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <h1>Wikipedia Viewer</h1> 
-
-
-      <!-- jQuery & Bootstrap js & application.js -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="application.js"></script>
-    </body>
-  </html>
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i" rel="stylesheet">
+  <!-- bootstrap 4 & Font Awesome & style.css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Wikipedia Viewer</h1> 
+  <form class="search-form text-center" id="wiki-form">
+    <input class="search-bar" type="text" name="search" id="search" autocomplete="off">
+    <button type="submit"><i class="fa fa-search fa-2x"></i></button>
+  </form>
+  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+    <p class="text-center random-article">random article</p>
+  </a>
+  <div id="result"></div>
+  <!-- jQuery & Bootstrap js & application.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="application.js"></script>
+</body>
+</html>
