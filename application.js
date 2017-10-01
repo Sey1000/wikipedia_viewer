@@ -20,9 +20,7 @@ $('#wiki-form').submit(function(e) {
 })
 
 function responseToHtml(array) {
-  $('.title').fadeOut(300, function() {
-    $('.search-form').animate({"margin-top": '30px',}, 500);
-  });
+  $('.title').slideUp(700);
   for (var i = 0; i < array[1].length; i++) {
     var searchResult = "<a class=\"search-anchor\" href=\"" + array[3][i] + "\"><div class=\"search-result\"><h3>" + array[1][i] + "</h3><p>" + array[2][i] + "</p></div></a>"
     $('#result').append(searchResult);
